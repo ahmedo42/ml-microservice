@@ -2,26 +2,34 @@
 
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
+This project is an example of a Machine Learning Microservice API using Docker & Kubernetes.
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+A pre-trained, `sklearn` model that  been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing)
 
-### Project Tasks
-
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
-* Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
-* Configure Kubernetes and create a Kubernetes cluster
-* Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
-
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
-
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
+ A Python flask app in `app.py` serves out predictions about housing prices through API calls. This project could be extended to any pre-trained machine learning model.
 
 ---
+
+## Project Layout
+
+<ui>
+
+`model_data` : pre-trained model binaries and training data
+
+`output_txt_files` : output result from running inference on docker and kubernetes
+
+`app.py` : entry point for flask server
+
+`make_predictions.sh` : a  script for sending prediction request to the flask server
+
+`run_docker.sh` : a script for building and running the docker container
+
+`run_kubernetes.sh` : a script for running the app in a local kubernetes cluster
+
+`upload_docker.sh` : a  script for uploading the image to docker hub
+
+</ui>
+
 
 ## Setup the Environment
 
