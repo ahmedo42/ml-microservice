@@ -1,4 +1,4 @@
-[![<ahmedo42>](https://circleci.com/<gh>/<ahmedo42>/<ml-microservice>.svg?style=svg)](https://app.circleci.com/pipelines/github/ahmedo42/ml-microservice)
+[![ahmedo42](https://circleci.com/gh/ahmedo42/ml-microservice.svg?style=svg)](https://app.circleci.com/pipelines/github/ahmedo42/ml-microservice)
 
 ## Project Overview
 
